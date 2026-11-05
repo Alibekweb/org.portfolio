@@ -1,0 +1,12 @@
+.tw{position:fixed;right:20px;bottom:20px;z-index:50}
+.tw>button{padding:12px 22px;border-radius:99px;border:0;background:var(--ink);color:var(--bg);font:inherit;font-weight:500;cursor:pointer;transition:transform .2s}
+.tw>button:hover{transform:scale(1.06)}
+.pn{position:absolute;right:0;bottom:58px;width:250px;padding:20px;background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:0 20px 60px rgba(0,0,0,.2);animation:fup .3s forwards;opacity:0}
+.pn p{margin:0 0 10px;font-size:14px;color:var(--mute)}
+.sw{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:18px}
+.sw button{width:30px;height:30px;border-radius:50%;border:3px solid transparent;cursor:pointer;transition:transform .2s}
+.sw button:hover{transform:scale(1.2)}
+.sw button.on{border-color:var(--ink)}
+.md{display:flex;gap:8px}
+.md button{flex:1;padding:9px;border-radius:12px;border:1px solid var(--line);background:none;color:var(--ink);font:inherit;cursor:pointer}
+.md button.on{background:var(--ink);color:var(--bg)}

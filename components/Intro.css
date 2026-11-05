@@ -1,0 +1,17 @@
+.intro{position:fixed;inset:0;z-index:100;background:#070B14;display:grid;place-items:center;cursor:pointer;animation:ovf .5s 2.85s forwards}
+.ball{position:absolute;top:50%;left:50%;width:30px;height:30px;margin:-15px 0 0 -15px;border-radius:50%;background:var(--ac);
+  animation:drop 1.9s both,grow .9s 1.95s cubic-bezier(.7,0,.3,1) forwards}
+.il{position:absolute;top:calc(50% + 46px);color:#EAF0F8;font-family:var(--fd);font-size:18px;letter-spacing:.02em;opacity:0;animation:fin .6s .5s forwards,fout .3s 1.9s forwards}
+@keyframes drop{
+ 0%{transform:translateY(-42vh);animation-timing-function:cubic-bezier(.5,0,1,.6)}
+ 22%{transform:translateY(0) scale(1.35,.65);animation-timing-function:cubic-bezier(0,.4,.5,1)}
+ 30%{transform:translateY(-20vh) scale(.92,1.1);animation-timing-function:cubic-bezier(.5,0,1,.6)}
+ 42%{transform:translateY(0) scale(1.25,.75);animation-timing-function:cubic-bezier(0,.4,.5,1)}
+ 48%{transform:translateY(-8vh) scale(.96,1.05);animation-timing-function:cubic-bezier(.5,0,1,.6)}
+ 56%{transform:translateY(0) scale(1.15,.85);animation-timing-function:cubic-bezier(0,.4,.5,1)}
+ 61%{transform:translateY(-2.5vh);animation-timing-function:cubic-bezier(.5,0,1,.6)}
+ 66%,100%{transform:translateY(0) scale(1)}}
+@keyframes grow{to{transform:scale(130)}}
+@keyframes ovf{to{opacity:0;visibility:hidden}}
+@keyframes fin{to{opacity:.85}}
+@keyframes fout{to{opacity:0}}

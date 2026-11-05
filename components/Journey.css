@@ -1,0 +1,5 @@
+.tl{list-style:none;margin:0;padding:0 0 0 34px;border-left:2px solid var(--line);max-width:760px}
+.tl li{position:relative;padding:0 0 46px}
+.tl li::before{content:"";position:absolute;left:-43px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--ac)}
+.tl b{font-family:var(--fd);font-size:32px;font-weight:600;display:block;letter-spacing:-.03em}
+.tl span{color:var(--mute)}
